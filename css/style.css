@@ -5,9 +5,21 @@
     box-sizing: border-box;
 }
 
+/* GENERIC */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 /* COMMON */
 body {
     font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
     /* test */
     background-color: pink;
 }
@@ -18,6 +30,10 @@ body {
     clear: both;
 }
 
+.col {
+    float: left;
+}
+
 /* HEADER */
 header {
     height: 60px;
@@ -26,3 +42,19 @@ header {
     line-height: 20px;
 }
 
+/* JUMBO */
+
+
+/* PLAN */
+
+
+/* PARTNERS */
+
+
+/* CALL TO ACTION */
+
+
+/* FAQ */
+
+
+/* FOOTER */
