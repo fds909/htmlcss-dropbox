@@ -8,4 +8,21 @@
 /* COMMON */
 body {
     font-family: 'Open Sans',sans-serif;
+    /* test */
+    background-color: pink;
 }
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+header {
+    height: 40px;
+    background-color: white;
+    padding: 20px;
+    line-height: 20px;
+}
+
