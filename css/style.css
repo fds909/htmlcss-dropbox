@@ -57,15 +57,27 @@ header {
 }
 
 /* PLAN */
-
+.plan {
+    height: 140vh;
+}
 
 /* PARTNERS */
-
+.partners {
+    height: 300vh;
+}
 
 /* CALL TO ACTION */
-
+.call {
+    height: 30vh;
+    background-color: lightblue;
+}
 
 /* FAQ */
-
+.faq {
+    height: 50vh;
+}
 
 /* FOOTER */
+.footer {
+    
+}
