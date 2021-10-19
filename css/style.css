@@ -6,8 +6,9 @@
 }
 
 /* GENERIC */
-a {
+li a {
     text-decoration: none;
+    display: block;
 }
 
 ul {
@@ -23,15 +24,13 @@ body {
     font-family: 'Open Sans',sans-serif;
     font-size: 16px;
     font-weight: 600;
-
-    /* test */
-    background-color: pink;
 }
 
 /* Layout generic classes */
 .col {
     float: left;
 }
+
 .clearfix::after {
     content: "";
     display: table;
@@ -52,7 +51,10 @@ header {
 
 
 /* JUMBO */
-
+.jumbo {
+    background-color: lightblue;
+    height: 80vh;
+}
 
 /* PLAN */
 
