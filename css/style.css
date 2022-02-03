@@ -5,25 +5,12 @@
     box-sizing: border-box;
 }
 
-/* GENERIC */
-li a {
-    text-decoration: none;
-    display: block;
+html {
+    scroll-behavior: smooth;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-}
-
-/* COMMON */
 body {
     font-family: 'Open Sans',sans-serif;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 /* Layout generic classes */
@@ -37,47 +24,481 @@ body {
     clear: both;
 }
 
-/* HEADER */
-header {
-    height: 60px;
-    background-color: white;
-    padding: 20px;
-    line-height: 20px;
+img {
+    max-width: 100%;
 }
 
-.logo {
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    font-size: 16px;
+    line-height: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    height: 100%;
+    color: black;
+    text-align: center;
+}
+
+nav li img {
+    text-align: right;
+}
+
+.left-menu {
+    width: 50%;
     float: left;
 }
 
+.right-menu {
+    width: 50%;
+    float: right;
+}
 
-/* JUMBO */
+/* MAIN */
+
+/* Jumbotron */
 .jumbo {
-    background-color: lightblue;
-    height: 80vh;
+    background-color: #b4d0e7;
+    height: 120vh;
+    padding: 80px;
 }
 
-/* PLAN */
+.jumbo-container {
+    width: 90%;
+}
+
+.jumbo p {
+    margin: 30px 0;
+}
+
+.jumbo h1 {
+    font-size: 80px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.jumbo .description {
+    margin: 30px 0;
+}
+
+.jumbo i {
+    font-size: 40px;
+}
+
+.jumbo img {
+    display: relative;
+}
+
+.col-text {
+    width: 40%;
+}
+
+.col-image {
+    width: 60%;
+    float: right;
+}
+
+/* Plans */
+
+
+#plans {
+    background-color: white;
+    height: 250vh;
+}
+
+#plans h2 {
+    font-size: 40px;
+    margin-top: 30vh;
+    margin-bottom: 60px;
+}
+
+.checkbox-container {
+    margin-bottom: 40px;
+}
+
+.fake-check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d1d1d4;
+    border-radius: 50%;
+}
+
+.checkbox-container:first-child {
+    border: 5px solid #0061ff;
+}
+
+.checkbox-container span {
+    margin-right: 60px;
+}
+
+
+/* Plans */
+.plan-box {
+    height: 160vh;
+}
+
 .plan {
-    height: 140vh;
+    border: 1px solid #d0d0d3;
+    width: 30%;
+    height: 100%;
+    margin-right: 3.3333%;
 }
 
-/* PARTNERS */
-.partners {
-    height: 300vh;
+.plan-name {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d3;
+    line-height: 40px;
 }
 
-/* CALL TO ACTION */
-.call {
-    height: 30vh;
-    background-color: lightblue;
+.plan-pricing {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#plans h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+#plans .price {
+    margin-bottom: 12px;
+}
+
+#plans .description {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.plan-pricing .month {
+    font-size: 14px;
+    color: grey;
+}
+
+.plan-features {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.plan-features div {
+    margin-bottom: 15px;
+}
+
+.call-to-action {
+    margin-bottom: 30px;
+}
+
+.buy-now {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.buy-now a {
+    color: #0061ff;
+}
+
+.plan-box hr {
+    width: 50px;
+    color: #d0d0d3;
+}
+
+.highlights {
+    margin-top: 40px;
+}
+
+.highlights h4 {
+    margin-bottom: 30px;
+}
+
+.highlights ul {
+    list-style-type: none;
+}
+
+.highlights i {
+    color: #0061ff;
+}
+
+.highlights li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.plan-enterprise {
+    width: 100%;
+    height: 35vh;
+    margin-top: 50px;
+    border: 1px solid #d0d0d3;
+}
+
+.plan-enterprise .col-text {
+    width: 70%;
+}
+
+.plan-enterprise .col-btn {
+    width: 25%;
+}
+
+/* Partner */
+#partner {
+    height: 80vh;
+    margin-bottom: 100px;
+}
+
+#partner .col-img {
+    width: 55%;
+}
+
+#partner .col-text {
+    width: 45%;
+    padding: 30px 40px;
+}
+
+#partner h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#partner p {
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+/* Business Features */
+#business-features {
+    margin-bottom: 300px;
+}
+
+#business-features .row{
+    margin-bottom: 200px;
+    margin: auto;
+}
+
+#business-features h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.feature img {
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature p a {
+    color: black;
+}
+
+/* Clients */
+
+#clients h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#clients a {
+    display: block;
+    color: #0061ff;
+    margin-bottom: 40px;
+}
+
+.find-more {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.col-logos {
+    width: 400px;
+    height: 400px;
+    background-color: greenyellow;
+}
+
+#clients .col-text {
+    width: calc(100% - 800px);
+    height: 400px;
+    background-color: #f5f5f5;
+}
+
+#clients .box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+/* per trasformare gli .svg da nero a bianco */
+#clients img {
+    filter: invert(100);
+    width: 55%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clients .col-text .partner-logo {
+    width: 30%;
+    height: 35px;
+    background-image: url('../img/designit.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#clients .col-text hr {
+    width: 50px;
+    color: #d0d0d3;
+    margin-bottom: 50px;
+}
+
+#clients p {
+    margin-bottom: 40px;
+}
+
+.lightgreen {
+    border: 10px solid #d0e9cd;
+}
+
+/* box colors */
+.lightgreen {
+    background-color: #a2d39b;
+}
+
+.purple {
+    background-color: #61082b;
+}
+
+.lightblue {
+    background-color: #0093ce;
+}
+
+.tomatored {
+    background-color: #ff1c1c;
+}
+
+.bordeaux {
+    background-color: #d5001f;
+}
+
+.sky {
+    background-color: #b4d0e7;
+}
+
+.blue {
+    background-color: #0d2481;
+}
+
+.yellow {
+    background-color: #ffd830;
+}
+
+/* Call to action */
+#call-to-action {
+    height: 60vh;
+    padding-top: 30vh;
+}
+
+#call-to-action h2 {
+    color: #61082b;
+    font-size: 40px;
+}
+
+#call-to-action .col-title {
+    width: 50%;
+}
+
+#call-to-action .col-button {
+    text-align: right;
+    width: 40%;
+}
+
+#call-to-action .btn-white {
+    border: 0 solid;
+    padding: 8px 60px;
 }
 
 /* FAQ */
-.faq {
-    height: 50vh;
+#faq {
+    height: 120vh;
+    padding: 100px 0;
 }
 
-/* FOOTER */
-.footer {
-    
+#faq h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#faq ul {
+    list-style-type: none;
+}
+
+#faq i {
+    float: right;
+}
+
+#faq h4 {
+    font-size: 17px;
+    padding: 25px 0;
+    border-top: 1px solid #d0d0d3;
+}
+
+#faq p {
+    display: none;
+    color: #d0d0d3;
+}
+
+
+
+/* Buttons */
+.btn-blue {
+    background-color: #0061ff;
+    font-size: 14px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.btn-blue:hover {
+    background-color: #4887ec;
+}
+
+.btn-white {
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.btn-large {
+    padding: 7px 45px;
 }
